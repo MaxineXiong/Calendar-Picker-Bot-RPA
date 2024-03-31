@@ -1,0 +1,418 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="818.4,3096.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="646.4,3032" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FromDate" />
+      <Variable x:TypeArguments="x:String" Name="ToDate" />
+      <Variable x:TypeArguments="x:String" Name="str_DefaultInitialMonth" />
+      <Variable x:TypeArguments="s:DateTime" Name="DefaultInitialDate" />
+      <Variable x:TypeArguments="s:DateTime" Name="dt_FromDate" />
+      <Variable x:TypeArguments="s:DateTime" Name="dt_ToDate" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="FromDateClicked" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="ToDateClicked" />
+      <Variable x:TypeArguments="x:String" Name="varLocation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment DisplayName="Assignment Requirement" sap:VirtualizedContainerService.HintSize="603.2,536.8" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Assignment 6: Calendar Picker Bot&#xA;&#xA;Objective&#xA;&#xA;Build a bot which searches for a location in Booking.com, selects the start and end date from the calendar picker.&#xA;&#xA;Instructions&#xA;&#xA;- Open Booking.com manually then use an Attach Browser activity and select the browser, tweak the selector to make it reliable and dynamic for any page of the site.&#xA;&#xA;- Use a Type Into activity to type &quot;New York&quot; in the location field. Tweak the selector to exclude the id property and rather include the tag and class property. Ensure the typing happens in the background (simulate the typing of the text).&#xA;&#xA;- Use a Click activity to open the Calendar popup.&#xA;&#xA;- Drag in two Assign activities into the beginning of the workflow and assign two new variables &quot;FromDate&quot; and &quot;ToDate&quot; both of type String. The values must be of this format &quot;d MMMM yyyy&quot; for example, &quot;8 June 2021&quot;. You can choose your own start and end dates.&#xA;&#xA;- Add in two Click activities to select the before and after dates in the calendar picker respectively. Hint: You will need to fine-tune the selectors to be able to identify the correct day and month. To do this, split the values from the FromDate and ToDate variables and create dynamic selectors.&#xA;&#xA;- Set the bot up so that it clicks the next chevron icon/button on the calendar picker for the following months if the date i.e. selector is not available in the displayed calendar popup. Do this for both the From Date and the To Date. To do this add in a While activity and a Try Catch into the While, then the Click Date activity into the Try. In the Catch, add in a Click activity which clicks the next chevron icon/button." />
+    <Assign DisplayName="Specify the Check-in date in &quot;d MMMM yyyy&quot; format" sap:VirtualizedContainerService.HintSize="603.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[FromDate]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">2 April 2024</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Specify the Check-out date in &quot;d MMMM yyyy&quot; format" sap:VirtualizedContainerService.HintSize="603.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[ToDate]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">17 June 2024</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Specify the location" sap:VirtualizedContainerService.HintSize="603.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[varLocation]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Sydney</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="Convert the date entries from string to datetime" sap:VirtualizedContainerService.HintSize="603.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Convert the Check-in date from string to datetime" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[dt_FromDate]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(FromDate, "d MMMM yyyy", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign DisplayName="Convert the Check-out date from string to datetime" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_12">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[dt_ToDate]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(ToDate, "d MMMM yyyy", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <If Condition="[dt_FromDate &gt;= Now AND dt_ToDate &gt; dt_FromDate]" DisplayName="Verify the validity of the Check-in and Check-out dates" sap:VirtualizedContainerService.HintSize="603.2,1877.6" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="569.6,1519.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="If the Check-in and Check-out dates are confirmed to be valid, visit booking.com in Chrome browser" sap:VirtualizedContainerService.HintSize="526.4,1429.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Background" OpenMode="IfNotOpen" ScopeGuid="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence sap:VirtualizedContainerService.HintSize="492.8,1212.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGoToUrl DisplayName="Go back to the home page" sap:VirtualizedContainerService.HintSize="449.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.booking.com" Version="V3" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Enter the location" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Text="[varLocation]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="263, 658, 421, 50" DesignTimeScaleFactor="1.3799999952316284" ElementType="InputBox" FriendlyName="'Gold Coast'" FullSelectorArgument="&lt;webctrl id=':re:' tag='INPUT' aria-label='Where are you going?' aria-role='combobox' class='eb46370fe1' parentclass='e000754250' parentid='indexsearch' placeholder='Where are you going?' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':re:' tag='INPUT' aria-label='Where are you going?' aria-role='combobox' class='eb46370fe1' parentclass='e000754250' parentid='indexsearch' placeholder='Where are you going?' type='' aaname='' /&gt;" Guid="8e104955-4c6e-4100-a656-9c10960e92da" ImageBase64="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" InformativeScreenshot="54a8be5fb6d1f3a1a8236b8ec7a5dcd8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click to expand the date selection pane" ClickType="Single" DisplayName="Click on the calender icon" sap:VirtualizedContainerService.HintSize="449.6,188.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="761, 597, 28, 28" DesignTimeScaleFactor="1.3799999952316284" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='indexsearch' tag='svg' parentclass='fcd9eec8fb e93f4f9263 c2cc050fb8 c696a7d242' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='indexsearch' tag='svg' parentclass='fcd9eec8fb e93f4f9263 c2cc050fb8 c696a7d242' type='' class='' aaname='' /&gt;" Guid="281babfd-cf21-4915-9262-fd66f3631117" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHcSURBVFhH7ZbNqwFhFMbvv6nsFAsLCzaUDTZKWbHH0keYpSQpyUbWUmx9rgjJuT1nDjMmhrnNXNzur07pec8579O87zHzRS/mMwzsdjv59RxW8h8a6Pf75HK5aDAYiGIO8pCPumd4aKDdbnPDbrcrijnIQz7qnuF9DCyXS8rlcpRIJCgej18iGAxyw1AodKXfC+QhH3V6HX0LhQJtNhvZUYUNnE4n8vv9XOh0lMtl3vgMG9hut7yYzWbpeDzywhm7jgB9M5kM5fN5UVTYAB4Liur1Oot6Op0Or/V6PVHMQR7yUWekVqtZNzCfz6lUKtF6vRbFnNVqxfmLxUIUjR8ZsJP3N/AbYWogEAhcza7dgf7/d8CSgUqlQtFolEfLCN564XCYhsOhKBr4W4/FYlQsFkVRsWTgcDiQ2+1mvdVqiaqRTCZ5LZVKiaLRbDZ5DfX6f1b0t/QEcHF8Ph+Nx2NRNKrVKnk8HlIURRSN0WhEXq+X6/V83h2wm8+cApzjrSmYzWb8gYGXlRFMAepwT/TYOgW4/VhLp9OiaNybAstPwGwK0OzvTYHxzOwG/W8a2O/3bCASifDXjFOB/jcNAJwXTDgdjUZDdlS5GMCn+WQycTSm0ynvo+di4DUQfQOwDCT73z4mwAAAAABJRU5ErkJggg==" InformativeScreenshot="50c08f0ca51727434ea1814ac7f29939.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Sequence sap2010:Annotation.AnnotationText="If the Check-in date precedes the first date of the default starting month, click the left-arrow chevron icon to navigate to the previous month" DisplayName="Check if it's necessary to navigate to the previous month" sap:VirtualizedContainerService.HintSize="449.6,127.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get the default starting month" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" TextString="[str_DefaultInitialMonth]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="783, 480, 386, 66" DesignTimeScaleFactor="1.3799999952316284" ElementType="Text" FriendlyName="'April 2024'" FullSelectorArgument="&lt;webctrl tag='H3' class='e1eebb6a1e ee7ec6b631' parentclass='d358556c65' parentid='calendar-searchboxdatepicker' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' class='e1eebb6a1e ee7ec6b631' parentclass='d358556c65' parentid='calendar-searchboxdatepicker' type='' /&gt;" Guid="16a8ffa3-ffaf-4ced-8750-de3f60815ab4" ImageBase64="" InformativeScreenshot="3f8d6bef46a101710b4e808e7d4c3a22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign DisplayName="Get the first date of the default starting month" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_13">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:DateTime">[DefaultInitialDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:DateTime">[Datetime.ParseExact("1 " + str_DefaultInitialMonth.Trim, "d MMMM yyyy", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[dt_FromDate &lt; DefaultInitialDate]" DisplayName="Check if the Check-in date precedes the first date of the default starting month" sap:VirtualizedContainerService.HintSize="433.6,430.4" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click the left-arrow chevron icon to navigate to the previous month" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="780, 500, 28, 28" DesignTimeScaleFactor="1.3799999952316284" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='calendar-searchboxdatepicker' tag='BUTTON' type='button' aria-label='Previous month' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='calendar-searchboxdatepicker' tag='BUTTON' type='button' aria-label='Previous month' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' type='' class='' aaname='' /&gt;" Guid="7ab51bcc-bf7b-4456-a903-965291cb6a5e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD1SURBVFhH7dQ9CoQwEIbhPYeF+NPlUtoIFmIlehEvJIhXUvxhli9kxTKTCSzs5gULk2IegvFFXy4AAiAAfgOw7zv1fU/DMJgV+8SA4zioKAqKooiUUvqdkwiAYWVZ6uFJktCyLGbHPmeAj+HICeBrOGIDfA5HLMB5nvfwLMvEwxEL0LatHp6mqZfhyBqwbZsejmccR7Mqj3UCXdfdxz/Ps1mVxQJc10VN02iEjw8QsQAIiKqqvCHYAITb8ERM02R2+DkB0BMRx7EzwhmAnv8FV4QIgPBn/JxEnue0rqvZsUsMQEDgitZ1bVbs8wKQFAAB8O8AojcnS3dW/enb5AAAAABJRU5ErkJggg==" InformativeScreenshot="eeec1ccfa7460f9932366c554107068e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                  <While DisplayName="Select the Check-in Date" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="While_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <While.Condition>[FromDateClicked = False]</While.Condition>
+                    <TryCatch DisplayName="Try click the Check-in date" sap:VirtualizedContainerService.HintSize="513.6,604" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="476.8,372.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="Click the Check-in date" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Timeout="1" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="838, 792, 55, 61" DesignTimeScaleFactor="1.3799999952316284" ElementType="Text" FriendlyName="'22'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-role='checkbox' parentid='calendar-searchboxdatepicker' tag='SPAN' aria-label='{0}' /&gt;&quot;, FromDate)]" FuzzySelectorArgument="&lt;webctrl aria-role='checkbox' parentid='calendar-searchboxdatepicker' tag='SPAN' aria-label='22 August 2024' type='' class='cf06f772fa ef091eb985' aaname='' check:text='22' /&gt;" Guid="12effad4-3fff-47f5-8f2e-6ee55effc9b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAMSURBVBhXY0ADDAwAABIAAaMn47oAAAAASUVORK5CYII=" InformativeScreenshot="964ebd6ef15642abeb5410cc33fe5076.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <Assign DisplayName="Reset FromDateClicked from False to True" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[FromDateClicked]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="480,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click the right-arrow chevron icon to navigate to the next month if the Check-in date is not found in the current page." ClickType="Single" DisplayName="Click the right-arrow chevron icon" sap:VirtualizedContainerService.HintSize="333.6,217.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1553, 480, 28, 28" DesignTimeScaleFactor="1.3799999952316284" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Next month' parentclass='a10b0e2d13 c807ff2d48' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Next month' parentclass='a10b0e2d13 c807ff2d48' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' type='' class='' aaname='' /&gt;" Guid="2c51eb13-8351-4e56-93d3-894ad80ea5c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVFhH7dQ9CoRADIbhPYeFipXHEkFsrAT1Hp7HRhRPZOUPWb5hWBarSSZgMy/YjEUe3awferkACIAAYAH6vjfXeZ72xD9nwHEclOc5RVFEZVmqIVhvYNs2StPUIIqiUEGwd0AbIVrCJ+K6LnuHnwiA/hFVVYkRYgDSQHgB0LqulCSJQbRta0/d8wagcRwNABf+rpy8AcuyUJZlZvgwDPbUPbUdaJqG7vu2d9wTA+Z59h6ORAAMj+PYDMf2S4cjNuA53OcjhFiAaZpUhyNnwL7vv22v61plOHIG4HfGU3ddpzYciZZQswAIgAB4GUD0BT3ed3Exa4KSAAAAAElFTkSuQmCC" InformativeScreenshot="181617eb615b5322ba313d2dfe2d0ac8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </While>
+                  <While DisplayName="Select the Check-out Date" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="While_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <While.Condition>[ToDateClicked = False]</While.Condition>
+                    <TryCatch DisplayName="Try click the Check-out date" sap:VirtualizedContainerService.HintSize="513.6,604" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,372.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="Click the Check-out date" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Timeout="1" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="838, 792, 55, 61" DesignTimeScaleFactor="1.3799999952316284" ElementType="Text" FriendlyName="'22'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-role='checkbox' parentid='calendar-searchboxdatepicker' tag='SPAN' aria-label='{0}' /&gt;&quot;, ToDate)]" FuzzySelectorArgument="&lt;webctrl aria-role='checkbox' parentid='calendar-searchboxdatepicker' tag='SPAN' aria-label='22 August 2024' type='' class='cf06f772fa ef091eb985' aaname='' check:text='22' /&gt;" Guid="12effad4-3fff-47f5-8f2e-6ee55effc9b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAMSURBVBhXY0ADDAwAABIAAaMn47oAAAAASUVORK5CYII=" InformativeScreenshot="964ebd6ef15642abeb5410cc33fe5076.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <Assign DisplayName="Reset ToDateClicked from False to True" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[ToDateClicked]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="480,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click the right-arrow chevron icon to navigate to the next month if the Check-out date is not found in the current page." ClickType="Single" DisplayName="Click the right-arrow chevron icon" sap:VirtualizedContainerService.HintSize="333.6,217.6" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqX3l7AGwAIB0gIkMjIyNGIzOWEtNmIxZC00ODM0LThkOTgtNDIxYWI3MDRjNTFi2AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1553, 480, 28, 28" DesignTimeScaleFactor="1.3799999952316284" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Next month' parentclass='a10b0e2d13 c807ff2d48' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Next month' parentclass='a10b0e2d13 c807ff2d48' /&gt;&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' type='' class='' aaname='' /&gt;" Guid="2c51eb13-8351-4e56-93d3-894ad80ea5c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVFhH7dQ9CoRADIbhPYeFipXHEkFsrAT1Hp7HRhRPZOUPWb5hWBarSSZgMy/YjEUe3awferkACIAAYAH6vjfXeZ72xD9nwHEclOc5RVFEZVmqIVhvYNs2StPUIIqiUEGwd0AbIVrCJ+K6LnuHnwiA/hFVVYkRYgDSQHgB0LqulCSJQbRta0/d8wagcRwNABf+rpy8AcuyUJZlZvgwDPbUPbUdaJqG7vu2d9wTA+Z59h6ORAAMj+PYDMf2S4cjNuA53OcjhFiAaZpUhyNnwL7vv22v61plOHIG4HfGU3ddpzYciZZQswAIgAB4GUD0BT3ed3Exa4KSAAAAAElFTkSuQmCC" InformativeScreenshot="181617eb615b5322ba313d2dfe2d0ac8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </While>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on the 'Search' button" sap:VirtualizedContainerService.HintSize="449.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56e2fa58-c586-47f6-a54f-a6a871b8d55f" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaA-IAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AubFmLAGwAIB0gIkZjY0NzBjNDUtY2QyYy00MTdlLTkxODYtOTY2NDU1NzY0ZDY12AIF4AIB&amp;sid=df0e214c69f107ecd8db60b22d474331&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1560, 331, 149, 74" DesignTimeScaleFactor="1.3799999952316284" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Search' innertext='Search' parentid='indexsearch' visibleinnertext='Search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Search' innertext='Search' parentid='indexsearch' visibleinnertext='Search' class='a83ed08757 c21c56c305 a4c1805887 f671049264 d2529514af c082d89982 cceeb8986b' check:text='Search' /&gt;" Guid="838e15df-04b2-4637-a226-b17a8ffc6b14" ImageBase64="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" InformativeScreenshot="55aabdb90e9468b83a10444bf79644b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2fa9a0a876483607978a22de028194d3.jpg" Selector="&lt;html app='chrome.exe' title='*Booking.com*' /&gt;" Title="Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodations" Url="https://www.booking.com" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="376.8,175.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Notify users to double check the entered date(s)" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;The entered date(s) are invalid. Please double-check.&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
